@@ -39,19 +39,19 @@ $(document).ready(function(){
 
     }
     var dataRango1 = {
-        labels:['Personal','Procesos','Capacitacion'],
+        labels:['Personal','Procesos'],
         datasets:[{
             label: "Athena",
             borderColor: "rgba(117,110,255,0.8)",
             backgroundColor:"rgba(117,110,255,0.2)",
-            //PPerfil,Presupuesto,Capacitación
-            data: [65, 75, 70],
+            //PPerfil,Presupuesto
+            data: [2, 1],
             //fill: false
         },{
             label: "Compuhypermegared",
             borderColor: "rgba(255,51,51,0.8)",
             backgroundColor:"rgba(255,51,51,0.2)",
-            data: [100, 100, 100],
+            data: [3, 3],
             //fill: false
         }]
 
@@ -61,7 +61,25 @@ $(document).ready(function(){
         data: data
     });
     var myRadarChart = new Chart(grafica1, {
-        type: 'radar',
-        data: dataRango1
+        type: 'horizontalBar',
+        data: dataRango1,
+        options:{scales: {
+            xAxes: [{
+                stacked: false,
+                ticks:{
+                    min: 0
+                }
+            }],
+            yAxes: [{
+                stacked: false,
+                ticks:{
+                    min: 0
+                }
+            }]
+        }}
     });
 });
+function getResults(){
+    var res = $('#formAns').serialize();
+    console.log(res);
+}

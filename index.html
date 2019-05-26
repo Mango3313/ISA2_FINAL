@@ -158,36 +158,36 @@
             <h1>Posicionamiento:</h1>
         </div>
         <div class="row">
-            <form action="">
+            <form id="formAns">
                 <div class="col">
                     <p>1. ¿Cuántas personas cubren con el perfil requerido para alcanzar sus metas actualmente?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_1" type="radio">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_1" type="radio" value="25">
                             <label class="custom-control-label" for="customRadio1_1">25%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_2" type="radio">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_2" type="radio" value="50"> 
                             <label class="custom-control-label" for="customRadio1_2">50%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_3" type="radio">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_3" type="radio" value="75">
                             <label class="custom-control-label" for="customRadio1_3">75%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_4" type="radio">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_4" type="radio" value="100">
                             <label class="custom-control-label" for="customRadio1_4">100%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_5" type="radio">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_5" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio1_5">No lo sé</label>
                         </div>
                     </div>
@@ -196,25 +196,25 @@
                     <p>2. ¿Con qué capacidad de personal cuenta actualmente?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_1" type="radio">
+                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_1" type="radio" value="-1000">
                             <label class="custom-control-label" for="customRadio2_1">No más de 1000 personas</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_2" type="radio">
+                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_2" type="radio" value="1000-5000">
                             <label class="custom-control-label" for="customRadio2_2">Más de 1000 personas pero menos de 5000</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_3" type="radio">
+                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_3" type="radio"value="+5000">
                             <label class="custom-control-label" for="customRadio2_3">Más de 5000 personas</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_4" type="radio">
+                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_4" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio2_4">No lo sé</label>
                         </div>
                     </div>
@@ -536,6 +536,10 @@
                 </div>
             </form>
         </div>
+        <div class="row">
+            <button id="btnCompara" onclick="getResults();" type="button" class="btn btn-primary btn-lg btn-block">Realizar comparación</button>
+        </div>
+        <br>
     </div>
     <!---->
     <div class="container">
