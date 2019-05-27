@@ -460,7 +460,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <p>13. ¿Existe algún espacio para que sus empleados puedan relajarse/motivarse?</p>
+                        <p>13. ¿Existe algún tipo de certificación activa en su negocio?</p>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
                                 <input name="custom-radio-13" class="custom-control-input" id="customRadio13_1" type="radio" value="1">
@@ -474,7 +474,28 @@
                             </div>
                         </div>
                     </div>
-                        <button id="btnCompara" onclick="getResults();" type="button" class="btn btn-primary btn-lg btn-block">Realizar comparación</button>
+                    <div class="col">
+                        <p>14. ¿Cuantas certificaciones están activas actualmente?</p>
+                        <div class="col">
+                            <div class="custom-control custom-radio mb-3">
+                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_1" type="radio" value="1">
+                                <label class="custom-control-label" for="customRadio14_1">0</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-radio mb-3">
+                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_2" type="radio" value="2">
+                                <label class="custom-control-label" for="customRadio14_2">Solo 1</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-radio mb-3">
+                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_3" type="radio" value="1">
+                                <label class="custom-control-label" for="customRadio14_3">Más de 1</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnCompara" onclick="getResults();" type="button" class="btn btn-primary btn-lg btn-block">Realizar comparación</button>
                     </form>
                 </div>
                 </div>
@@ -486,6 +507,9 @@
         </div>
         <div class="row">
             <canvas class="chatjs" id="result_chart_1"></canvas>
+        </div>
+        <div class="row">
+            <canvas class="chartjs" id="result_chart_2" ></canvas>
         </div>
     </div>
 </body>
