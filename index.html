@@ -14,6 +14,7 @@
     <link href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
     <link type="text/css" href="./assets/css/argon.css?v=1.0.0" rel="stylesheet">
+    <link rel="stylesheet" href="./ExtraCSS/complement.css">
     <!-- Argon Scripts -->
     <!-- Core -->
     <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
@@ -30,7 +31,7 @@
     <nav class="navbar fixed-top navbar-horizontal navbar-expand-lg navbar-dark bg-info">
         <div class="container">
             <a class="navbar-brand" href="#" id="bCambio">
-                <h3>¿Quienes somos?</h3>
+                <h3 class='font-weight-bold text-secondary'>¿Quienes somos?</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
                 aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,8 +87,29 @@
             </div>
         </div>
     </nav>
+    <!---->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!---->
     <div class="container p-4 mt-6">
-        
+        <img src="./assets/img/UAQLogos/unnamed.png" alt="" class="rounded mx-auto d-block">
         <div class="row">
             <h1>Objetivo</h1>
             <p>Innovar tecnológicamente y estar siempre actualizados sobre el nuevo mercado móvil, que propongan ideas para desarrollar el sistema a la medida, haciéndolo en el menor tiempo tiempo posible.</p>
@@ -470,27 +492,43 @@
                             </div>
                         </div>
                     </div>
-                    <button id="btnCompara" onclick="getResults();" type="button" class="btn btn-primary btn-lg btn-block">Realizar comparación</button>
+                    <button id="btnCompara" onclick="getResults();" type="button" class="btn btn-primary btn-lg btn-block mb-2">Realizar comparación</button>
                     </form>
                 </div>
                 </div>
     </div>
     <!---->
-    <div class="container">
+    <div class="container hidden" id="resultados">
         <div class="row">
+            <h4>Relacion Capacitación-Perfilamiento-Presupuesto</h4>
             <canvas class="chartjs" id="result_chart"/>
         </div>
         <div class="row">
+            <h4>Personal-Procesos</h4>
             <canvas class="chatjs" id="result_chart_1"></canvas>
         </div>
         <div class="row">
+            <h4>Tiempo - Evaluaciones- Horas trabajadas</h4>
             <canvas class="chartjs" id="result_chart_2" ></canvas>
         </div>
         <div class="row">
+            <h4>Tecnologias usadas</h4>
             <canvas class="chartjs" id="result_6"></canvas>
         </div>
         <div class="row">
+                <h4>Comparaciones</h4>
             <canvas class="chartjs" id="result_sino"></canvas>
+        </div>
+        <div class="row hidden" id="propuestas">
+            <div class="col" id="propuesta1">
+
+            </div>
+            <div class="col" id="propuesta2">
+
+            </div>
+            <div class="col" id="propuesta3">
+
+            </div>
         </div>
     </div>
 </body>

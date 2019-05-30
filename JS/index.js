@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //$('.modal').modal();
     $('nav').css('transition','500ms ease-out');
     $(window).scroll(function(){
         var p1 = false;
@@ -7,15 +8,15 @@ $(document).ready(function(){
         //console.log($(this).scrollTop());
         if($(this).scrollTop() < 620){
             $('nav').removeClass().addClass('navbar fixed-top navbar-horizontal navbar-expand-lg navbar-dark bg-info');
-            $('#bCambio').html("<h3>¿Quienes somos?</h3>");
+            $('#bCambio').html("<h3 class='font-weight-bold text-secondary'>¿Quienes somos?</h3>");
         }else
-        if($(this).scrollTop() > 621 && $(this).scrollTop() < 3000){
+        if($(this).scrollTop() > 620 && $(this).scrollTop() < 3000){
             $('nav').removeClass().addClass('navbar fixed-top navbar-horizontal navbar-expand-lg navbar-dark bg-warning');
-            $('#bCambio').html("<h3>Evaluación</h3>");
+            $('#bCambio').html("<h3 class='font-weight-bold text-secondary'>Evaluación</h3>");
         }else
         if($(this).scrollTop() > 3000){
             $('nav').removeClass().addClass('navbar fixed-top navbar-horizontal navbar-expand-lg navbar-dark bg-success');
-            $('#bCambio').html("<h3>Resultados</h3>");
+            $('#bCambio').html("<h3 class='font-weight-bold text-secondary'>Resultados</h3>");
         }
     });
 });
@@ -49,14 +50,19 @@ function getResults(){
     res = $('#formAns').serializeArray();
     console.log(res);
     if(res == ''){
-        console.log("Error");
+        $('#exampleModalLabel').text('Error');
+        $('#modalBody').text('Hay uno o más campos vacios');
+        $('#exampleModal').modal();
     }else if (res.length < 13 ){
-        console.log("Faltan campos");
+        $('#exampleModalLabel').text('Error');
+        $('#modalBody').text('Hay uno o más campos vacios');
+        $('#exampleModal').modal();
     }else{
         for(i=0;i<res.length;i++){
             arrRes.push(res[i].value);
         }
         printGraficas(res);
+        $('#resultados').removeClass().addClass('container show');
     }
     //var res = $('#formAns').serialize();
     //console.log(res);
@@ -286,5 +292,5 @@ function getSelectedItems(inputVar){
     ///console.log(res);
 }
 function recomendaciones(){
-    
+     
 }

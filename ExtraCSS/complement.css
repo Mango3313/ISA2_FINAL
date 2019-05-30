@@ -1,0 +1,7 @@
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+    transition: 500ms ease-in;
+}
