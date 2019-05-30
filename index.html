@@ -22,14 +22,15 @@
     <script src="./assets/js/argon.js?v=1.0.0"></script>
     <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
     <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="./JS/underscore-min.js"></script>
     <script src="./JS/index.js"></script>
 </head>
 
 <body>
     <nav class="navbar fixed-top navbar-horizontal navbar-expand-lg navbar-dark bg-info">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/UAQLogos/unnamed.png" alt="">
+            <a class="navbar-brand" href="#" id="bCambio">
+                <h3>¿Quienes somos?</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
                 aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,12 +87,7 @@
         </div>
     </nav>
     <div class="container p-4 mt-6">
-        <div class="row">
-            <h1>¿Quienes somos?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae corporis consequatur voluptates
-                odio, quisquam dolore repellat modi, aliquid enim, veniam eum optio similique quos vel. Delectus porro
-                non perferendis dolorem.</p>
-        </div>
+        
         <div class="row">
             <h1>Objetivo</h1>
             <p>Innovar tecnológicamente y estar siempre actualizados sobre el nuevo mercado móvil, que propongan ideas para desarrollar el sistema a la medida, haciéndolo en el menor tiempo tiempo posible.</p>
@@ -163,31 +159,31 @@
                     <p>1. ¿Cuántas personas cubren con el perfil requerido para alcanzar sus metas actualmente?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_1" type="radio" value="25">
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio1_1" type="radio" value="25">
                             <label class="custom-control-label" for="customRadio1_1">25%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_2" type="radio" value="50"> 
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio1_2" type="radio" value="50"> 
                             <label class="custom-control-label" for="customRadio1_2">50%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_3" type="radio" value="75">
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio1_3" type="radio" value="75">
                             <label class="custom-control-label" for="customRadio1_3">75%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_4" type="radio" value="100">
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio1_4" type="radio" value="100">
                             <label class="custom-control-label" for="customRadio1_4">100%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1_5" type="radio" value="0">
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio1_5" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio1_5">No lo sé</label>
                         </div>
                     </div>
@@ -196,25 +192,25 @@
                     <p>2. ¿Con qué capacidad de personal cuenta actualmente?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_1" type="radio" value="-1000">
+                            <input name="custom_radio_2" class="custom-control-input" id="customRadio2_1" type="radio" value="1">
                             <label class="custom-control-label" for="customRadio2_1">No más de 1000 personas</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_2" type="radio" value="1000-5000">
+                            <input name="custom_radio_2" class="custom-control-input" id="customRadio2_2" type="radio" value="2">
                             <label class="custom-control-label" for="customRadio2_2">Más de 1000 personas pero menos de 5000</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_3" type="radio"value="+5000">
+                            <input name="custom_radio_2" class="custom-control-input" id="customRadio2_3" type="radio"value="3">
                             <label class="custom-control-label" for="customRadio2_3">Más de 5000 personas</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-2" class="custom-control-input" id="customRadio2_4" type="radio" value="0">
+                            <input name="custom_radio_2" class="custom-control-input" id="customRadio2_4" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio2_4">No lo sé</label>
                         </div>
                     </div>
@@ -223,31 +219,31 @@
                     <p>3. ¿Qué cantidad de presupuesto está dispuesto a invertir para alcanzar su meta?                        </p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-3" class="custom-control-input" id="customRadio3_1" type="radio" value="25">
+                            <input name="custom_radio_3" class="custom-control-input" id="customRadio3_1" type="radio" value="25">
                             <label class="custom-control-label" for="customRadio3_1">25%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-3" class="custom-control-input" id="customRadio3_2" type="radio" value="50">
+                            <input name="custom_radio_3" class="custom-control-input" id="customRadio3_2" type="radio" value="50">
                             <label class="custom-control-label" for="customRadio3_2">50%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-3" class="custom-control-input" id="customRadio3_3" type="radio" value="75">
+                            <input name="custom_radio_3" class="custom-control-input" id="customRadio3_3" type="radio" value="75">
                             <label class="custom-control-label" for="customRadio3_3">75%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-3" class="custom-control-input" id="customRadio3_4" type="radio" value="100">
+                            <input name="custom_radio_3" class="custom-control-input" id="customRadio3_4" type="radio" value="100">
                             <label class="custom-control-label" for="customRadio3_4">100%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-3" class="custom-control-input" id="customRadio1_4" type="radio" value="0">
+                            <input name="custom_radio_3" class="custom-control-input" id="customRadio1_4" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio1_4">No lo sé</label>
                         </div>
                     </div>
@@ -256,31 +252,31 @@
                     <p>4. ¿Qué porcentaje de la empresa cree que requiere capacitación para desarrollar nuevas habilidades que le permitan mantenerse al ritmo necesario par alcanzar los objetivos?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-4" class="custom-control-input" id="customRadio4_1" type="radio" value="25">
+                            <input name="custom_radio_4" class="custom-control-input" id="customRadio4_1" type="radio" value="25">
                             <label class="custom-control-label" for="customRadio4_1">25%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-4" class="custom-control-input" id="customRadio4_2" type="radio" value="50">
+                            <input name="custom_radio_4" class="custom-control-input" id="customRadio4_2" type="radio" value="50">
                             <label class="custom-control-label" for="customRadio4_2">50%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-4" class="custom-control-input" id="customRadio4_3" type="radio" value="75">
+                            <input name="custom_radio_4" class="custom-control-input" id="customRadio4_3" type="radio" value="75">
                             <label class="custom-control-label" for="customRadio4_3">75%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-4" class="custom-control-input" id="customRadio4_4" type="radio" value="100">
+                            <input name="custom_radio_4" class="custom-control-input" id="customRadio4_4" type="radio" value="100">
                             <label class="custom-control-label" for="customRadio4_4">100%</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio4_5" type="radio" value="0">
+                            <input name="custom_radio_1" class="custom-control-input" id="customRadio4_5" type="radio" value="0">
                             <label class="custom-control-label" for="customRadio4_5">No lo sé</label>
                         </div>
                     </div>
@@ -289,19 +285,19 @@
                     <p>5. ¿Cuánto tiempo está dispuesto a invertir para lograr dichas metas?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-5" class="custom-control-input" id="customRadio5_1" type="radio" value="1">
+                            <input name="custom_radio_5" class="custom-control-input" id="customRadio5_1" type="radio" value="1">
                             <label class="custom-control-label" for="customRadio5_1">1 año</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-5" class="custom-control-input" id="customRadio5_2" type="radio" value="2">
+                            <input name="custom_radio_5" class="custom-control-input" id="customRadio5_2" type="radio" value="2">
                             <label class="custom-control-label" for="customRadio5_2">De 2 a 5 años</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-5" class="custom-control-input" id="customRadio5_3" type="radio" value="3">
+                            <input name="custom_radio_5" class="custom-control-input" id="customRadio5_3" type="radio" value="3">
                             <label class="custom-control-label" for="customRadio5_3">Más de 5 años</label>
                         </div>
                     </div>
@@ -309,32 +305,32 @@
                 <div class="col">
                     <p>6. ¿Qué tipo de tecnología es las que más usa actualmente?</p>
                     <div class="col">
-                        <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-6" class="custom-control-input" id="customRadio6_1" type="radio" value="1">
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input name="custom_radio_6" class="custom-control-input" id="customRadio6_1" type="checkbox" value="1">
                             <label class="custom-control-label" for="customRadio6_1">Web</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-6" class="custom-control-input" id="customRadio6_2" type="radio" value="2">
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input name="custom_radio_6" class="custom-control-input" id="customRadio6_2" type="checkbox" value="2">
                             <label class="custom-control-label" for="customRadio6_2">Móviles</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-6" class="custom-control-input" id="customRadio6_3" type="radio" value="3">
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input name="custom_radio_6" class="custom-control-input" id="customRadio6_3" type="checkbox" value="3">
                             <label class="custom-control-label" for="customRadio6_3">Híbridas</label>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-6" class="custom-control-input" id="customRadio6_4" type="radio" value="4">
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input name="custom_radio_6" class="custom-control-input" id="customRadio6_4" type="checkbox" value="4">
                             <label class="custom-control-label" for="customRadio6_4">Escritorio</label>
                         </div>
                     </div>
                     <div class="col">
-                            <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-6" class="custom-control-input" id="customRadio6_5" type="radio" value="">
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input name="custom_radio_6" class="custom-control-input" id="customRadio6_5" type="checkbox" value="5">
                                 <label class="custom-control-label" for="customRadio6_5">Otras</label>
                             </div>
                         </div>
@@ -343,19 +339,19 @@
                     <p>7. ¿Que capacidad de procesos tiene actualmente?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-7" class="custom-control-input" id="customRadio7_1" type="radio" value="1">
+                            <input name="custom_radio_7" class="custom-control-input" id="customRadio7_1" type="radio" value="1">
                             <label class="custom-control-label" for="customRadio7_1">Menos de 1000 procesos</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-7" class="custom-control-input" id="customRadio7_2" type="radio" value="2">
+                            <input name="custom_radio_7" class="custom-control-input" id="customRadio7_2" type="radio" value="2">
                             <label class="custom-control-label" for="customRadio7_2">Más de 1,000 procesos pero menos de 5,000</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-7" class="custom-control-input" id="customRadio7_3" type="radio" value="3">
+                            <input name="custom_radio_7" class="custom-control-input" id="customRadio7_3" type="radio" value="3">
                             <label class="custom-control-label" for="customRadio7_3">Más de 5,000 procesos</label>
                         </div>
                     </div>
@@ -364,19 +360,19 @@
                     <p>8. ¿Cuántas empresas se pueden considerar como competencia directa a dia de hoy?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-8" class="custom-control-input" id="customRadio8_1" type="radio" value="1">
+                            <input name="custom_radio_8" class="custom-control-input" id="customRadio8_1" type="radio" value="1">
                             <label class="custom-control-label" for="customRadio8_1">Menos de 5</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-8" class="custom-control-input" id="customRadio8_2" type="radio" value="2">
+                            <input name="custom_radio_8" class="custom-control-input" id="customRadio8_2" type="radio" value="2">
                             <label class="custom-control-label" for="customRadio8_2">Más de 5 pero menos de 10</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-8" class="custom-control-input" id="customRadio8_3" type="radio" value="3">
+                            <input name="custom_radio_8" class="custom-control-input" id="customRadio8_3" type="radio" value="3">
                             <label class="custom-control-label" for="customRadio8_3">Más de 10</label>
                         </div>
                     </div>
@@ -385,13 +381,13 @@
                     <p>9. ¿Actualmente tiene una forma para lograr la medición de calidad de sus procesos/soluciones?</p>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-9" class="custom-control-input" id="customRadio9_1" type="radio" value="1">
+                            <input name="custom_radio_9" class="custom-control-input" id="customRadio9_1" type="radio" value="1">
                             <label class="custom-control-label" for="customRadio9_1">Si</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-9" class="custom-control-input" id="customRadio9_2" type="radio" value="2">
+                            <input name="custom_radio_9" class="custom-control-input" id="customRadio9_2" type="radio" value="2">
                             <label class="custom-control-label" for="customRadio9_2">No</label>
                         </div>
                     </div>
@@ -400,25 +396,25 @@
                         <p>10. ¿Con qué frecuencia realiza evaluaciones para medir el nivel de conocimiento de los empleados?</p>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-10" class="custom-control-input" id="customRadio10_1" type="radio" value="1">
+                                <input name="custom_radio_10" class="custom-control-input" id="customRadio10_1" type="radio" value="1">
                                 <label class="custom-control-label" for="customRadio10_1">Nunca</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-10" class="custom-control-input" id="customRadio10_2" type="radio" value="2">
+                                <input name="custom_radio_10" class="custom-control-input" id="customRadio10_2" type="radio" value="2">
                                 <label class="custom-control-label" for="customRadio10_2">A veces</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-10" class="custom-control-input" id="customRadio10_3" type="radio" value="3">
+                                <input name="custom_radio_10" class="custom-control-input" id="customRadio10_3" type="radio" value="3">
                                 <label class="custom-control-label" for="customRadio10_3">Regularmente</label>
                            </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-10" class="custom-control-input" id="customRadio10_4" type="radio" value="4">
+                                <input name="custom_radio_10" class="custom-control-input" id="customRadio10_4" type="radio" value="4">
                                 <label class="custom-control-label" for="customRadio10_4">Siempre</label>
                             </div>
                         </div>
@@ -427,13 +423,13 @@
                         <p>11. ¿Se han realizado estudios de mercado para medir la posición de la empresa?</p>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-11" class="custom-control-input" id="customRadio11_1" type="radio" value="1">
+                                <input name="custom_radio_11" class="custom-control-input" id="customRadio11_1" type="radio" value="1">
                                 <label class="custom-control-label" for="customRadio11_1">Si</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-11" class="custom-control-input" id="customRadio11_2" type="radio" value="2">
+                                <input name="custom_radio_11" class="custom-control-input" id="customRadio11_2" type="radio" value="2">
                                 <label class="custom-control-label" for="customRadio11_2">No</label>
                             </div>
                         </div>
@@ -442,19 +438,19 @@
                         <p>12. ¿Cual es el promedio de horas trabajadas actualmente?</p>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-12" class="custom-control-input" id="customRadio12_1" type="radio" value="1">
+                                <input name="custom_radio_12" class="custom-control-input" id="customRadio12_1" type="radio" value="1">
                                 <label class="custom-control-label" for="customRadio12_1">Menos de 8 horas</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-12" class="custom-control-input" id="customRadio12_2" type="radio" value="2">
+                                <input name="custom_radio_12" class="custom-control-input" id="customRadio12_2" type="radio" value="2">
                                 <label class="custom-control-label" for="customRadio12_2">8 horas exactas</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-12" class="custom-control-input" id="customRadio12_3" type="radio" value="3">
+                                <input name="custom_radio_12" class="custom-control-input" id="customRadio12_3" type="radio" value="3">
                                 <label class="custom-control-label" for="customRadio12_3">Más de 8 horas</label>
                             </div>
                         </div>
@@ -463,35 +459,14 @@
                         <p>13. ¿Existe algún tipo de certificación activa en su negocio?</p>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-13" class="custom-control-input" id="customRadio13_1" type="radio" value="1">
+                                <input name="custom_radio_13" class="custom-control-input" id="customRadio13_1" type="radio" value="1">
                                 <label class="custom-control-label" for="customRadio13_1">Si</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-13" class="custom-control-input" id="customRadio13_2" type="radio" value="2">
+                                <input name="custom_radio_13" class="custom-control-input" id="customRadio13_2" type="radio" value="2">
                                 <label class="custom-control-label" for="customRadio13_2">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <p>14. ¿Cuantas certificaciones están activas actualmente?</p>
-                        <div class="col">
-                            <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_1" type="radio" value="1">
-                                <label class="custom-control-label" for="customRadio14_1">0</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_2" type="radio" value="2">
-                                <label class="custom-control-label" for="customRadio14_2">Solo 1</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="custom-control custom-radio mb-3">
-                                <input name="custom-radio-14" class="custom-control-input" id="customRadio14_3" type="radio" value="1">
-                                <label class="custom-control-label" for="customRadio14_3">Más de 1</label>
                             </div>
                         </div>
                     </div>
@@ -510,6 +485,12 @@
         </div>
         <div class="row">
             <canvas class="chartjs" id="result_chart_2" ></canvas>
+        </div>
+        <div class="row">
+            <canvas class="chartjs" id="result_6"></canvas>
+        </div>
+        <div class="row">
+            <canvas class="chartjs" id="result_sino"></canvas>
         </div>
     </div>
 </body>
